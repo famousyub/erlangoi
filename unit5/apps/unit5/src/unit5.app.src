@@ -1,0 +1,22 @@
+{application, unit5,
+ [{description, "Web services example"},
+  {vsn, "0.1.0"},
+  {registered, [weather_table]},
+  {mod, {unit5_app, []}},
+  {applications,
+   [ kernel
+   , stdlib
+   , inets
+   , ssl
+   , cowboy
+   , pgo
+   , jsx
+   , xmerl
+   , tempo
+   ]},
+  {env,[]},
+  {modules, []},
+
+  {licenses, ["Apache 2.0"]},
+  {links, []}
+ ]}.
